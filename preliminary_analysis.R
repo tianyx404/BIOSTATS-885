@@ -67,10 +67,6 @@ p2 <- ggplot(heart_treatment, aes(survived, age, fill=survived)) +
 ggsave("boxplot_control.png", plot = p1, width = 8, height = 6, dpi = 300)
 ggsave("boxplot_treatment.png", plot = p2, width = 8, height = 6, dpi = 300)
 
-
-
-
-
 # Make boxplots of age~transplant_status, by=survived_status
 p3 <- ggplot(heart_alive, aes(transplant, age, fill=transplant)) + 
   geom_boxplot() + 
